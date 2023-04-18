@@ -1,0 +1,130 @@
+ .products {
+     margin-top: 40px;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 15px;
+ }
+
+ .pro__card {
+     width: 230px;
+     border-radius: 8px;
+     overflow: hidden;
+ }
+
+ .pro__card:hover {
+     box-shadow: 0 5px 5px #0001;
+ }
+
+ .pro__image {
+     height: 280px;
+     position: relative;
+     border-radius: 8px;
+     overflow: hidden;
+ }
+
+ .pro__image img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     transition: .3s;
+ }
+ .pro__card:hover img{
+    transform: scale(1.05);
+ }
+
+ .pro__image svg {
+     position: absolute;
+     top: 10px;
+     right: 10px;
+     font-size: 22px;
+     color: #999;
+ }
+ .pro__image svg:hover {
+     color: rgb(53, 52, 52);
+ }
+
+ .pro__body {
+     padding: 10px;
+     font-size: 14px;
+ }
+.pro__card-title{
+    height: 35px;
+    overflow: hidden;
+}
+ .pro__card-monthly {
+     background: #FFFF00;
+     display: inline-block;
+     margin: 10px 0 12px;
+     padding: 3px;
+     font-size: 12px;
+     border-radius: 3px;
+     color: #222;
+ }
+
+ .pro__card-price {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .pro__card-price del {
+     font-size: 12px;
+     color: #888;
+ }
+
+ .pro__card-shopping {
+     width: 34px;
+     height: 34px;
+     border: 2px solid #ddd;
+     border-radius: 50%;
+     background: #fff;
+     font-size: 18px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ .pro__card-shopping:hover {
+     width: 36px;
+     height: 36px;
+
+ }
+@media screen and (max-width: 600px) {
+    .products {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .pro__card {
+        width: auto;
+    }
+    .pro__image {
+        height: 220px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
