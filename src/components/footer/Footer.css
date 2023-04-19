@@ -19,6 +19,10 @@
     height: 260px;
     line-height: 35px;
 }
+.top__cart1{
+    height: 260px;
+    line-height: 35px;
+}
 .btn{
     border: none;
     background: none;
@@ -61,7 +65,12 @@
         
      }
      .top__cart{
-        width: auto;
+        display: none;
+     }
+     .top__cart1{
+       width: auto;
+       height: 260px; 
+       margin: auto;
      }
 }
 

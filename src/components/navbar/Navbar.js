@@ -5,6 +5,7 @@ import { AiOutlineHeart, AiOutlineShoppingCart, AiOutlineHome } from 'react-icon
 import { NavLink } from 'react-router-dom';
 import { NAVBAR_BOTTOM_DATA } from "../../static"
 
+
 function Navbar() {
     return (
         <>
@@ -13,6 +14,7 @@ function Navbar() {
                     <span><img width={170} src="https://api.logo.com/api/v2/images?logo=logo_279e1a80-8abc-4ce0-a19e-3a0f814663b3&format=webp&margins=0&quality=60&width=500&background=transparent&u=1679896903" alt="" /></span>
                 </NavLink>
                 <button className='nav__katalog-btn'>
+                    
                     <FiMenu />
                     <span>Katalog</span>
                 </button>

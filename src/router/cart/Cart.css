@@ -66,6 +66,7 @@
     gap: 5px;
 }
 
+
 .delete svg {
     font-size: 30px;
 }
@@ -151,7 +152,7 @@
     }
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 550px) {
     .betwen {
         font-size: 12px;
     }
@@ -160,4 +161,14 @@
         width: 70px;
 
     }
+    .muth{
+        width: 100px;
+        height: 30px;
+    }
+    .calcus{
+       display: none;
+    }
+    
+   
+   
 }
