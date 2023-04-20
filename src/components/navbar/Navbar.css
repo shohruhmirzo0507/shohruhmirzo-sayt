@@ -84,6 +84,14 @@
     overflow: auto;
     
 }
+.nav___collection {
+    width: 100%;
+    height: 100vh;
+    border: 1px solid red;
+    display: flex;
+    gap: 20px;
+    padding: 5px 0px;
+}
 .nav__bottom span{
   white-space: nowrap;
 }
