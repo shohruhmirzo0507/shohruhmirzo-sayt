@@ -93,6 +93,8 @@
     border-radius: 5px;
     text-align: center;
     line-height: 55px;
+    position: sticky;
+    top: 10px;
 }
 
 .right__cart input {
@@ -156,6 +158,9 @@
     .betwen {
         font-size: 12px;
     }
+    .class{
+        height: 130px;
+    }
 
       .class img {
         width: 70px;
@@ -166,6 +171,7 @@
         height: 30px;
     }
     .calcus{
+        
        display: none;
     }
     

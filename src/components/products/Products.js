@@ -4,7 +4,7 @@ import "./Products.css"
 import { AiOutlineHeart, AiOutlineShoppingCart, AiFillHeart } from 'react-icons/ai';
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
-import { addToCart, removeFromHeart} from "../../context/action/action"
+import { addToCart, removeFromHeart, addToCard} from "../../context/action/action"
 
 
 function Products({ data }) {
@@ -36,8 +36,11 @@ function Products({ data }) {
                                 <del>{item.price * 1.2}</del>
                                 <p>{item.price} so'm</p>
                             </div>
-                            <div className='pro__card-shopping'>
+                            <div  onClick={()=> dispatch(addToCard(item))} className='pro__card-shopping'>
+                               
+
                                 <AiOutlineShoppingCart />
+                               
                             </div>
                         </div>
                     </div>

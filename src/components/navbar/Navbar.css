@@ -138,12 +138,108 @@
 
 
 
+/* pppppppp */
+
+.katalog__page {
+    width: 100%;
+    position: sticky;
+    z-index: 11;
+    top: -30px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+
+.green{
+    width: 300px;
+    height: 85vh;
+}
+.green1{
+    width: 940px;
+    height: 85vh;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gold{
+    width: 100%;
+    height: 40px;
+    border: none;
+    background: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.gold:hover{
+    background: rgb(234, 233, 233);
+    
+}
+.music{
+    width: 310px;
+    height: 85vh;
+
+}
+.music1{
+    width: 310px;
+    height: 85vh;
+
+}
+.music2{
+    width: 310px;
+    height: 85vh;
+
+}
+
+.activ{
+    line-height: 30px;
+    margin: 10px 0px 10px 0px;
+}
+
+@media screen and (max-width:1300px){
+  .green1{
+    width: 700px;
+  }  
+.music2{
+    display: none;
+}
+
+}
+@media screen and (max-width:970px){
+    .green1{
+        width: 400px;
+      } 
+.music1{
+    display: none;
+}
+
+}
+@media screen and (max-width:700px){
+    
+    .activ{
+        font-size: 14px;
+        margin: 10px 0px 10px 0px;
+        line-height: 25px;
+    }
+    .gold{
+        font-size: 15px;
+        overflow: hidden;
+    }
+    
+
+}
+@media screen and (max-width:550px){
+    
+    .green1{
+        display: none;
+    }
 
 
-
-
-
-
+}
 
 
 
