@@ -1,4 +1,4 @@
-import {ADD_TO_CARD, REMOVE_FROM_CARD, DEC_FROM_CARD} from "../action/actionType"
+import {ADD_TO_CARD, REMOVE_FROM_CARD, DEC_FROM_CARD, DELETE_ALL_CART} from "../action/actionType"
 
 const cart = (state = [], action)=>{
     let index = state.findIndex(i => i.id === action?.payload?.id)
@@ -14,6 +14,8 @@ switch (action.type) {
 
         case  REMOVE_FROM_CARD  :
             return state = state.filter(i=> i.id !== action.payload.id)
+        case  DELETE_ALL_CART  :
+            return state = []
 
     default:
         return state

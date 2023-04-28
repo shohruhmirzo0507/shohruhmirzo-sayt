@@ -7,10 +7,11 @@ import { NAVBAR_BOTTOM_DATA } from "../../static"
 import { ImCross } from 'react-icons/im'
 import { SlEarphones } from 'react-icons/sl'
 import { GrFormNext } from 'react-icons/gr'
-
+import {useLocation} from "react-router-dom"
 
 
 function Navbar() {
+const {pathname} = useLocation()
 
     const [division, setDivision] = useState(false)
     const OKAY = [
@@ -33,7 +34,9 @@ function Navbar() {
         { title: "Kitoblar" },
         { title: "Dacha,bog' va tomorqa" },
     ]
-
+if(pathname.includes("admin")){
+    return<></>
+}
     return (
         <>
             <div className='navbar container'>
